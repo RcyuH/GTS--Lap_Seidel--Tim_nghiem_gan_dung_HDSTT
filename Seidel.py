@@ -57,11 +57,3 @@ if LA.norm(B, ord=np.inf) < 1:
 	print(X)
 else:
 	print("Chuan cua A (B) lon hon hoac bang 1 nen khong thoa man dieu kien")
-
-#Kiem tra
-print()
-print()
-A, d = get_matrix()
-E = np.eye(len(A))
-X = LA.inv(E - A)@d
-print(X)
